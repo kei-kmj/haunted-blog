@@ -14,7 +14,7 @@
     <% end %>
     <div class="blog-content">
       <p>
-        <%= blog %>
+        <%= format_content(blog) %>
       </p>
     </div>
     <% if user_signed_in? && !blog.secret? %>
